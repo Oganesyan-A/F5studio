@@ -9,7 +9,21 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
-
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			   $('a[href^="#"]').click(function () { 
+			     elementClick = $(this).attr("href");
+			     destination = $(elementClick).offset().top;
+			     if($.browser.safari){
+			       $('body').animate( { scrollTop: destination }, 1100 );
+			     }else{
+			       $('html').animate( { scrollTop: destination }, 1100 );
+			     }
+			     return false;
+			   });
+			 });
+		</script>
 	</head>
 	<body>
 		<header>
@@ -31,11 +45,11 @@
 				<h1 class="col-md-4 "><a href="" class="title"><span class="blue">New</span> Degital</a></h1>
 				<ul class="nav-list col-md-8">
 					<li><a href="#">Home</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Why Us?</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Post Now</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="#about-us">About us</a></li>
+					<li><a href="#why-us">Why Us?</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#post-now">Post Now</a></li>
+					<li><a href="#blog">Blog</a></li>
 				</ul>
 			</div>
 		</div>
@@ -51,7 +65,7 @@
 				<li class="col-md-6 contact-us_right_list"><a href="#" class="contact-us_mail">info@personalmail.com</a></li>
 			</ul>
 		</section>
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			<div class="wrap">
 				<h3 class="block-title">About Us</h3>
 				<div class="col-md-5">
@@ -89,7 +103,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="why-us">
+		<section class="why-us" id="why-us">
 			<div class="wrap2">
 				<h3 class="block-title why-us_title">Why Us?</h3>
 				<div class="col-md-7">
@@ -129,7 +143,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="faq">
+		<section class="faq" id="faq">
 			<div class="wrap">
 				<h3>FAQ</h3>
 				<ul class="faq-list">
@@ -152,7 +166,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="post-now">
+		<section class="post-now" id="post-now">
 			<div class="wrap3">
 			<h3>Post Now!</h3>
 				<ul class="post-now-list">
@@ -165,7 +179,7 @@
 				</ul>
 			</div>
 		</section>	
-		<section class="posts-price">
+		<section class="posts-price" id="blog">
 			<div class="wrap">
 				<ul class="posts-price-list">
 					<li class="col-md-4 guest">
