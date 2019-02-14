@@ -47,6 +47,8 @@ a:hover                        { text-decoration:none; }
 .wrap{
  	width: 1170px;
  	margin: 0 auto;
+ 	/*! display: block; */
+ 	overflow: hidden;
  }
 .wrap2{
 	width: 1240px;
@@ -185,8 +187,7 @@ a:hover                        { text-decoration:none; }
  	text-align: left !important;
  }
 .contact-us_icon-list li{
-	padding: 50px 0 46px 155px; 
-	text-align: left;
+	padding: 50px 100px 46px 0; 
 	font: 800 19px Source Sans Pro;
 	color: #ffffff;
 }
@@ -209,8 +210,9 @@ a:hover                        { text-decoration:none; }
 
 .contact-us_list .contact-us-3{
 	background: url(../img/contact-us_3_icon.png)no-repeat;
-	background-position: left center;
-	padding: 50px 0 46px 155px;
+	background-position: -29px -34px;
+	padding: 45px 0 50px 110px;
+	font-size: 17px;
 }
 .contact-us_list li a{
  	font: 800 30px Source Sans Pro;
@@ -241,7 +243,7 @@ a:hover                        { text-decoration:none; }
 .block-title{
 	font: 800 50px Montserrat;
 	text-align: center;
-	padding: 124px 0 0;
+	padding: 123px 0 0;
 }
 .about-us_list li{
 	font: 700 19px Source Sans Pro;
@@ -300,10 +302,10 @@ a:hover                        { text-decoration:none; }
 
 .about-posts-list{
 	overflow: hidden;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 .about-posts-list li{
-	padding: 130px 0 0;
+	padding: 130px 0 30px;
 }
 .about-posts-list li p{
 	font: 400 19px Source Sans Pro;
@@ -354,6 +356,7 @@ a:hover                        { text-decoration:none; }
 	font: 800 19px Source Sans Pro;
 	line-height: 1.5;
 	padding-bottom: 33px;
+	width: 634px;
 }
 .why-us-img img{
 	width: 100%;
@@ -361,11 +364,13 @@ a:hover                        { text-decoration:none; }
 .why-us-button{
 	background: #fa4a33;
 	color: #feeceb;
-	padding: 14px 45px;
+	padding: 14px 0;
 	border-radius: 45px;
 	font: 400 20px Source Sans Pro;
-	margin-top: 33px;
+	margin: 0 58px 40px;
 	display: inline-block;
+	width: 238px;
+	text-align: center;
 }
 .benefits-post{
 	overflow: hidden;
@@ -375,9 +380,9 @@ a:hover                        { text-decoration:none; }
 	margin-bottom: 25px;
 }
 .benefits-post-title{
-	font: 800 50px Montserrat;
+	font: 800 46px Montserrat;
 	letter-spacing: -0.9px;
-	padding: 153px 0 79px;
+	padding: 110px 20px 79px;
 }
 .benefits-post h4{
 	font: 700 30px Source Sans Pro;
@@ -407,24 +412,20 @@ a:hover                        { text-decoration:none; }
 }
 
 .money{
-	padding: 3px 0 30px 125px;
+	padding: 3px 0 30px 110px;
 	background: url(../img/money.png) no-repeat;
-	background-position: left center;
+	background-position: 0px;
 }
 
 
 
-
-
-
-
-/*-----------------------------------------------------------------------*/
+/*------------------------------faq-----------------------------------------*/
 .faq{
 	background: url(../img/faq-bg.png) no-repeat;
 	background-position: right bottom;
 }
 .faq h3{
-	font: 800 50px Montserrat;
+	font: 800 47px Montserrat;
 	padding: 120px 0 23px;
 }
 .faq-list li{
@@ -443,12 +444,16 @@ a:hover                        { text-decoration:none; }
 }
 .faq-list li p{
 	overflow: hidden;
-	max-height: 0em;
-	padding: 0;
-	margin: 0;
+	/*! max-height: 0em; */
+	padding: 0 50px 0 0; margin: 0;
 	text-align: justify;
-	font: 700 20px Source Sans Pro;
+	font: 700 19px Source Sans Pro;
 	line-height: 1.4;
+}
+.faq-list li .active{	
+	background: url(../img/arrow-up.png) no-repeat;
+	background-position: right center;
+	color: blue;
 }
 .faq-list li a {
 	text-decoration: none;
@@ -466,33 +471,53 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------post-now------------------------------*/
 
 .post-now{
-	padding: 157px 0;
+	padding: 130px 0;
 	overflow: hidden;
+}
+.post-now-list{
+	margin-left: 0;
 }
 .post-now-list li img{
 	width: 100%;
+	display: block;
 }
 .post-now p{
 	font: 700 19px Source Sans Pro;
-	line-height: 1.4;
-	padding: 105px 10px 20px 0;
+	line-height: 1.5;
+	padding: 110px 10px 38px 56px;
+	color: #4f4f4f;
+	width: 135%;
 }
 .post-now h3{
-	font: 800 50px Montserrat;
+	font: 800 47px Montserrat;
 	text-align: center;
-	padding: 0 0 0 175px;
+	padding: 0 0 0 53%;
 }
-.post-now-right-block{
-	padding-left: 80px;
+.post-now-button{
+	background: #fa4a33;
+    color: #feeceb;
+    padding: 16px 0;
+    border-radius: 45px;
+    font: 400 20px Source Sans Pro;
+    margin: 0 58px 40px;
+    display: inline-block;
+    width: 238px;
+    text-align: center;
+}
 }
 
 /*-------------------------------posts-price---------------------*/
 .posts-price{
 	overflow: hidden;
 }
+
+.posts-price-list{
+    overflow: hidden;
+    padding: 0 0 100px;
+}
 .posts-price-list li{
 	text-align: center;
-	padding: 151px 35px 145px;
+	padding: 151px 35px 30px;
 }
 .posts-price-list .guest{
 	background: url(../img/guest.png) no-repeat;
@@ -528,7 +553,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------------footer----------------------------*/
 footer{
 	background: #1b1b1b;
-	padding: 94px 0 103px;
+	padding: 95px 0 105px;
 	overflow: hidden;
 	color: #ffffff;
 }
@@ -545,13 +570,13 @@ footer h2{
 }
 
 .footer-social-icons {
+	padding: 0 15%;
 	overflow: hidden;
-	float: right;
 }
 .footer-social-icons li{
 	float: left;
 	overflow: hidden;
-	margin-left: 25px;
+	margin-left: 15px;
 }
 .footer-social-icons li a{
 	width: 40px;
@@ -575,9 +600,366 @@ footer h2{
 	background: url(../img/google.png) no-repeat;
 	background-position: center;
 }
+/*------------------------------------------------media---------------------------------------------------*/
+/*@media screen and (max-width: 1170){
+	
+	.faq-list li{
+		width: 777;
+		border-bottom: 1px solid #d1d1d1;
+		padding: 21px 0;
+	}
+}
+@media screen and (max-width: 768px){
+	.wrap, .wrap2, .wrap3{
+		width: 100%;
+	}
 
+	.header-top_social-icons_right li {
+		margin: 0 0 0 25px;
+	}
+	.header-top_social-icons {
+	    overflow: hidden;
+	    width: 53%;
+	    float: left;
+	}
+	.header h1{
+		text-align: center;
+	}
+	.content {
+	    height: 615px;
+	}
+	.nav-list li{
+		display: block;
+	}
+	.title{
+		padding: 0 0 10px;
+		display:block;
+	}
+	.header {
+	    padding: 11px 0 0;
+	}
 
+	.content{
+		width: 100%;
+	}
 
+	.content h2 {
+    	font: 800 65px Montserrat;
+	}
+
+	.content .price {
+	    width: 243px;
+	    height: 47px;
+	    padding: 5px 0 9px 30px;
+	    font: 800 29px Montserrat;
+	}
+	.content p {
+	    padding: 20px 0 51px;
+	    font: 600 22px Source Sans Pro;
+	}
+	.content .contact-us_title {
+	    font: 700 30px Montserrat;
+	}
+	.contact-us_icon-list li {
+			padding: 46px 35px;
+			width: 50%;
+			float: left;
+			overflow: hidden;
+		}
+	.contact-us_icon-list li {
+	    padding: 46px 35px;
+	    width: 50%;
+	    float: left;
+	    overflow: hidden;
+	}
+
+	.contact-us_skype {
+		font: 800 19px Source Sans Pro;
+		padding: 30px 0 42px 103px;
+	    background-position: -20px;
+	}
+	.contact-us_mail{
+		background-position: -20px;
+		font: 800 19px Source Sans Pro;
+		padding: 30px 0 42px 103px;
+	}
+	.contact-us_block-title {
+	    font: 800 47px Montserrat;
+	    padding: 30px 0 0;
+	}
+	.block-title {
+	    font: 800 50px Montserrat;
+	    text-align: center;
+		padding: 60px 0 0;
+	}
+
+	.about-us_list li {
+		background-position: -4px;
+	    padding: 10px 100px;
+	}
+	.about-us_list li:first-child {
+	    background-position: -15px;
+	}
+	.about-us-button{
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.about-posts h3 {
+	    font: 800 40px Montserrat;
+	    margin-top: 75px;
+	}
+	.about-posts-list {
+    overflow: hidden;
+		padding-bottom: 50px;
+	}
+	.about-posts-list li {
+		padding: 130px 0 30px;
+	}
+	.contact-us_block-title {
+	    font: 800 47px Montserrat;
+	}
+	.contact-us_list .contact-us-1{
+		background-position: -30px -34px;
+		padding: 12px 0 20px 113px;
+		font-size: 21px;
+	}
+	.contact-us_list .contact-us-2{
+		background-position: -34px -34px;
+		padding: 54px 0 57px 112px;
+		font-size: 21px;
+	}
+	.contact-us_list .contact-us-3{
+    	padding: 45px 0 50px 110px;
+		font-size: 21px;}
+	}
+	.benefits-post-list li p{
+		width: 100%;
+		font-size: 16px;
+	}
+	.benefits-post p{
+		width: 100%;
+	}
+	.why-us_title {
+		text-align: left;
+		padding: 45px 13px 25px;
+  }
+	.why-us_list li {
+		font: 800 19px Source Sans Pro;
+		width: 634px;
+	}
+	.why-us-button {
+		margin: 0 0 40px;
+		width: 35%;
+		text-align: center;
+	}
+	.benefits-post-title {
+    	font: 800 46px Montserrat;
+		padding: 153px 20px 79px;
+	}
+	.faq h3 {
+		font: 800 47px Montserrat;
+		padding: 50px 13px 23px;
+	}
+	.faq-list li{
+		width: 777px;
+		padding: 21px 14px; 
+		font-size: 16px;
+	}
+	.faq-list li a:target {
+		text-decoration: none;
+		display: block;
+		text-align: left;
+		background: url(../img/arrow-up.png) no-repeat;
+		background-position: right center;
+		color: #4f4f4f;
+		font: 700 16px Source Sans Pro;
+		line-height: 1.4;
+		padding-right: 19px;
+	}
+	
+	.post-now{
+		padding: 0;
+		font: 700 19px Source Sans Pro;
+	}
+	.post-now h3 {
+		font: 800 47px Montserrat;
+		text-align: left;
+		padding: 16px;
+	}
+	.post-now p {
+			font: 700 17px Source Sans Pro;
+			padding: 40px 0;
+	}
+	.posts-price-list li {
+		padding: 151px 35px 30px;
+	}
+	footer {
+    background: #1b1b1b;
+    padding: 65px 0 80px; 
+  }
+	footer h2{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+	}
+	.footer-social-icons{
+		padding: 3% 18%;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 320px) {
+	.wrap, .wrap2, .wrap3{
+		width: 100%;
+	}
+
+	.header-top_social-icons_right li {
+		margin: 0;
+	}
+	.nav-list li{
+		display: none;
+	}
+	.title{
+		padding: 0 0 10px;
+		display:block;
+	}
+	.header {
+	    padding: 11px 0 0;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.content h2 {
+    	font: 800 40px Montserrat;
+	}
+
+	.content .price {
+	    width: 243px;
+	    height: 47px;
+	    padding: 5px 0 9px 30px;
+	    font: 800 29px Montserrat;
+	}
+	.content p {
+	    padding: 20px 0 51px;
+	    font: 600 21px Source Sans Pro;
+	}
+	.content .contact-us_title {
+	    font: 700 25px Montserrat;
+	}
+
+	.contact-us_icon-list li {
+	    padding: 35px 0;
+	}
+
+	.contact-us_skype {
+		font: 800 19px Source Sans Pro;
+		padding: 30px 0 42px 103px;
+	    background-position: -20px;
+	}
+	.contact-us_mail{
+		background-position: -20px;
+		font: 800 19px Source Sans Pro;
+		padding: 30px 0 42px 103px;
+	}
+	.contact-us_block-title {
+	    font: 800 47px Montserrat;
+	    padding: 30px 0 0;
+	}
+
+	.about-us_list li {
+		background-position: -15px;
+	    padding-left: 86px;
+	}
+	.about-us_list li:first-child {
+	    background-position: -15px;
+	}
+	.about-us-button{
+		margin-left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.about-posts h3 {
+	    font: 800 31px Montserrat;
+	    margin-top: 75px;
+	}
+	.about-posts-list {
+    	overflow: hidden;
+		padding-bottom: 50px;
+	}
+	.about-posts-list li {
+		padding: 130px 0 30px;
+	}
+	.contact-us_block-title {
+	    font: 800 47px Montserrat;
+	}
+	.contact-us_list .contact-us-1{
+		background-position: -30px -34px;
+		padding: 9px 0 20px 113px;
+		font-size: 17px;
+	}
+	.contact-us_list .contact-us-2{
+		background-position: -34px -34px;
+		padding: 54px 0 57px 112px;
+		font-size: 17px;
+	}
+	.contact-us_list .contact-us-3{
+    	padding: 45px 0 50px 110px;
+		font-size: 17px;}
+	}
+	.benefits-post-list li p{
+		width: 100%;
+		font-size: 16px;
+	}
+	.benefits-post p{
+		width: 100%;
+	}
+	.why-us_title {
+		text-align: left;
+		padding: 45px 13px 25px;
+  	}
+ 	.why-us_list li {
+		font: 800 19px Source Sans Pro;
+	}
+	.why-us-button {
+			margin: 0 0 40px;
+			width: 35%;
+			text-align: center;
+	}
+	.benefits-post-title {
+    	font: 800 46px Montserrat;
+		padding: 153px 20px 79px;
+	}
+	.faq h3 {
+			font: 800 47px Montserrat;
+			padding: 50px 13px 23px;
+	}
+	.faq-list li{
+		width: 748px;
+		padding: 21px 14px; 
+		font-size: 16px;
+	}
+
+	.faq-list li a{
+		padding-right: 19px;
+	}
+	.post-now{
+		padding: 0;
+	}
+	.post-now h3 {
+		font: 800 50px Montserrat;
+		text-align: center;
+		padding: 20px 0 0 126px;
+	}
+	.post-now p {
+			font: 700 19px Source Sans Pro;
+			padding: 40px 0;
+	}
+	.posts-price-list li {
+		padding: 151px 35px 30px;
+	}
+}*/
 
 
 

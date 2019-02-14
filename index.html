@@ -9,48 +9,39 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800" rel="stylesheet">
-		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-			   $('a[href^="#"]').click(function () { 
-			     elementClick = $(this).attr("href");
-			     destination = $(elementClick).offset().top;
-			     if($.browser.safari){
-			       $('body').animate( { scrollTop: destination }, 1100 );
-			     }else{
-			       $('html').animate( { scrollTop: destination }, 1100 );
-			     }
-			     return false;
-			   });
-			 });
-		</script>
+		<script src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<header>
+		<header id="header">
 		<div class="header-top">
 			<div class=" wrap">
 				<ul class="header-top_social-icons col-md-7 col-ms-12">
-					<li><a href="#" class="facebook"></a></li>
-					<li><a href="#" class="gmail"></a></li>
-					<li><a href="#" class="twitter"></a></li>
+					<li><a href="http://www.facebook.com/" class="facebook"></a></li>
+					<li><a href="http://www.gmail.com/" class="gmail"></a></li>
+					<li><a href="http://www.twitter.com/" class="twitter"></a></li>
 				</ul>
 				<ul class="header-top_social-icons_right col-md-5 col-ms-12">
-					<li><a href="#" class="skype">Personalskype</a></li>
-					<li><a href="#" class="mail">info@personalmail.com</a></li>
+					<li><a href="skype:Personalskype?userinfo" class="skype">Personalskype</a></li>
+					
+					<li><a href="mailto:info@personalmail.com" class="mail">info@personalmail.com</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="header">
 			<div class="wrap">
-				<h1 class="col-md-4 "><a href="" class="title"><span class="blue">New</span> Degital</a></h1>
-				<ul class="nav-list col-md-8">
-					<li><a href="#">Home</a></li>
-					<li><a href="#about-us">About us</a></li>
-					<li><a href="#why-us">Why Us?</a></li>
-					<li><a href="#faq">FAQ</a></li>
-					<li><a href="#post-now">Post Now</a></li>
-					<li><a href="#blog">Blog</a></li>
-				</ul>
+				<div class="col-md-4 ">				
+					<h1><a href="#header" class="title"><span class="blue">New</span> Degital</a></h1>
+				</div>
+				<div class="col-md-8">
+					<ul class="nav-list">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about-us">About us</a></li>
+						<li><a href="#why-us">Why Us?</a></li>
+						<li><a href="#faq">FAQ</a></li>
+						<li><a href="#post-now">Post Now</a></li>
+						<li><a href="#blog">Blog</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
@@ -61,8 +52,8 @@
 			<p>Posts That Contain Interviews Or News Stories About You,<br> Your Company Or Product/Service</p>
 			<span class="contact-us_title">You can contact us on: </span>
 			<ul class="contact-us_icon-list">
-				<li class="col-md-6 contact-us_left_list"><a href="#" class="contact-us_skype">personalskype</a></li>
-				<li class="col-md-6 contact-us_right_list"><a href="#" class="contact-us_mail">info@personalmail.com</a></li>
+				<li class="col-md-6 contact-us_left_list"><a href="skype:SkypeUser?userinfo" class="contact-us_skype">personalskype</a></li>
+				<li class="col-md-6 contact-us_right_list"><a href="#mailto:info@personalmail.com" class="contact-us_mail">info@personalmail.com</a></li>
 			</ul>
 		</section>
 		<section class="about-us" id="about-us">
@@ -146,35 +137,37 @@
 		<section class="faq" id="faq">
 			<div class="wrap">
 				<h3>FAQ</h3>
-				<ul class="faq-list">
-					<li id="menu">
-						<a href="#menu">Can I use my own content?</a>
-						<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
-					</li>
-					<li id="menu2">
-						<a href="#menu2" >Are feature guest posts any good for SEO?</a>
-						<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
-					</li>
-					<li id="menu3">
-						<a href="#menu3">Can these pages rank for keywords themselves?</a>
-						<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
-					</li>
-					<li id="menu4">
-						<a href="#menu4">Can I manipulate titles of posts to carry specific keywords of phrases?</a>
-						<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
-					</li>
-				</ul>
+				<div class="accordeon">	
+					<ul class="faq-list ">
+						<li id="menu">
+							<a href="#menu">Can I use my own content?</a>
+							<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
+						</li>
+						<li id="menu2">
+							<a href="#menu2" >Are feature guest posts any good for SEO?</a>
+							<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
+						</li>
+						<li id="menu3">
+							<a href="#menu3">Can these pages rank for keywords themselves?</a>
+							<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
+						</li>
+						<li id="menu4">
+							<a href="#menu4">Can I manipulate titles of posts to carry specific keywords of phrases?</a>
+							<p>In short – YES. They often contain branded links and any link is surrounded by incredibly </p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 		<section class="post-now" id="post-now">
 			<div class="wrap3">
-			<h3>Post Now!</h3>
+				<h3>Post Now!</h3>
 				<ul class="post-now-list">
-					<li class="col-md-5"><img src="img/post-now-pic.jpg" alt=""></li>
-					<li class="col-md-7 post-now-right-block">
+					<li class="col-md-6"><img src="img/post-now-pic.jpg" alt=""></li>
+					<li class="col-md-6 post-now-right-block">
 						
 						<p>Allow us to help you grow your brand and enhance your digital reputation. Our posting service offers you the chance to be seen by millions of people who will associate your brand with helpful information, or ground breaking news contributions. We offer bespoke outreach to clients looking to target specific demographics. </p>
-						<a href="#" class="why-us-button">Get a Feature Post</a>
+						<a href="#" class="post-now-button">Get a Feature Post</a>
 					</li>
 				</ul>
 			</div>
@@ -216,14 +209,16 @@
 					</li>
 					<li class="col-md-3">
 						<ul class="footer-social-icons">
-							<li><a href="" class="facebook"></a></li>
-							<li><a href="" class="gmail"></a></li>
-							<li><a href="" class="twitter"></a></li>
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="gmail"></a></li>
+							<li><a href="#" class="twitter"></a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
-		</footer>
+		</footer>	
+		<script src="js/main.js"></script>
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	</body>
 </html>
 
