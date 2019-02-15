@@ -380,7 +380,7 @@ a:hover                        { text-decoration:none; }
 	margin-bottom: 25px;
 }
 .benefits-post-title{
-	font: 800 46px Montserrat;
+	font: 800 50px Montserrat;
 	letter-spacing: -0.9px;
 	padding: 110px 20px 79px;
 }
@@ -601,12 +601,16 @@ footer h2{
 	background-position: center;
 }
 /*------------------------------------------------media---------------------------------------------------*/
-/*@media screen and (max-width: 1170){
+@media screen and (max-width: 1170){
 	
 	.faq-list li{
-		width: 777;
+		width: 777px;
 		border-bottom: 1px solid #d1d1d1;
 		padding: 21px 0;
+	}
+	.benefits-post-title {
+		font: 800 46px Montserrat;
+		padding: 100px 20px 79px;
 	}
 }
 @media screen and (max-width: 768px){
@@ -661,11 +665,11 @@ footer h2{
 	    font: 700 30px Montserrat;
 	}
 	.contact-us_icon-list li {
-			padding: 46px 35px;
-			width: 50%;
-			float: left;
-			overflow: hidden;
-		}
+		padding: 46px 35px;
+		width: 50%;
+		float: left;
+		overflow: hidden;
+	}
 	.contact-us_icon-list li {
 	    padding: 46px 35px;
 	    width: 50%;
@@ -677,11 +681,13 @@ footer h2{
 		font: 800 19px Source Sans Pro;
 		padding: 30px 0 42px 103px;
 	    background-position: -20px;
+	    display: block;
 	}
 	.contact-us_mail{
 		background-position: -20px;
 		font: 800 19px Source Sans Pro;
 		padding: 30px 0 42px 103px;
+		display: block;
 	}
 	.contact-us_block-title {
 	    font: 800 47px Montserrat;
@@ -695,7 +701,7 @@ footer h2{
 
 	.about-us_list li {
 		background-position: -4px;
-	    padding: 10px 100px;
+	    /*! padding: 10px 100px; */
 	}
 	.about-us_list li:first-child {
 	    background-position: -15px;
@@ -710,7 +716,7 @@ footer h2{
 	    margin-top: 75px;
 	}
 	.about-posts-list {
-    overflow: hidden;
+    	overflow: hidden;
 		padding-bottom: 50px;
 	}
 	.about-posts-list li {
@@ -743,7 +749,7 @@ footer h2{
 	.why-us_title {
 		text-align: left;
 		padding: 45px 13px 25px;
-  }
+  	}
 	.why-us_list li {
 		font: 800 19px Source Sans Pro;
 		width: 634px;
@@ -783,21 +789,26 @@ footer h2{
 		font: 700 19px Source Sans Pro;
 	}
 	.post-now h3 {
-		font: 800 47px Montserrat;
-		text-align: left;
-		padding: 16px;
+		padding: 40px 234px 0 0;
+		text-align: right;
 	}
 	.post-now p {
-			font: 700 17px Source Sans Pro;
-			padding: 40px 0;
+		font: 700 17px Source Sans Pro;
+		padding: 40px 0;
+	}
+	.post-now-right-block p{
+		width: 100%;
+	}
+	.post-now-button{
+		margin: 0;
 	}
 	.posts-price-list li {
 		padding: 151px 35px 30px;
 	}
 	footer {
-    background: #1b1b1b;
-    padding: 65px 0 80px; 
-  }
+	    background: #1b1b1b;
+	    padding: 65px 0 80px; 
+	  }
 	footer h2{
 		text-align: center;
 		padding: 0;
@@ -808,17 +819,28 @@ footer h2{
 		overflow: hidden;
 	}
 }
+
+@media screen and (max-width: 380px) {
+
+}
 @media screen and (max-width: 320px) {
 	.wrap, .wrap2, .wrap3{
 		width: 100%;
 	}
-
+	.header-top_social-icons_right {
+	    padding-top: 4px;
+	    overflow: hidden;
+	}
 	.header-top_social-icons_right li {
 		margin: 0;
+	}
+	.header h1 {
+	    text-align: left;
 	}
 	.nav-list li{
 		display: none;
 	}
+
 	.title{
 		padding: 0 0 10px;
 		display:block;
@@ -850,7 +872,9 @@ footer h2{
 	}
 
 	.contact-us_icon-list li {
-	    padding: 35px 0;
+	    width: 100%;
+	    padding: 45px 0 41px;
+	    text-align: left;
 	}
 
 	.contact-us_skype {
@@ -867,10 +891,9 @@ footer h2{
 	    font: 800 47px Montserrat;
 	    padding: 30px 0 0;
 	}
-
 	.about-us_list li {
-		background-position: -15px;
-	    padding-left: 86px;
+		background-position: -5px;
+	    padding-left: 94px;
 	}
 	.about-us_list li:first-child {
 	    background-position: -15px;
@@ -908,6 +931,10 @@ footer h2{
     	padding: 45px 0 50px 110px;
 		font-size: 17px;}
 	}
+	.benefits-post-title {
+	    font: 800 36px Montserrat;
+	    padding: 70px 20px 60px;
+	}
 	.benefits-post-list li p{
 		width: 100%;
 		font-size: 16px;
@@ -921,45 +948,35 @@ footer h2{
   	}
  	.why-us_list li {
 		font: 800 19px Source Sans Pro;
+		width: 100%
 	}
 	.why-us-button {
-			margin: 0 0 40px;
-			width: 35%;
-			text-align: center;
+		margin: 0 30px 40px;
+		width: 238px;
+		text-align: center;
 	}
-	.benefits-post-title {
-    	font: 800 46px Montserrat;
-		padding: 153px 20px 79px;
-	}
+	
 	.faq h3 {
-			font: 800 47px Montserrat;
-			padding: 50px 13px 23px;
+		font: 800 47px Montserrat;
+		padding: 50px 13px 23px;
 	}
-	.faq-list li{
-		width: 748px;
-		padding: 21px 14px; 
-		font-size: 16px;
-	}
+	
 
 	.faq-list li a{
 		padding-right: 19px;
 	}
 	.post-now{
-		padding: 0;
+		padding: 30px 0 170px;
 	}
-	.post-now h3 {
-		font: 800 50px Montserrat;
-		text-align: center;
-		padding: 20px 0 0 126px;
-	}
+	
 	.post-now p {
-			font: 700 19px Source Sans Pro;
-			padding: 40px 0;
+		font: 700 19px Source Sans Pro;
+		padding: 40px 0;
 	}
 	.posts-price-list li {
 		padding: 151px 35px 30px;
 	}
-}*/
+}
 
 
 
